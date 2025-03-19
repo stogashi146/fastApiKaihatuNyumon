@@ -1,0 +1,11 @@
+version: "3"
+services:
+  demo-app:
+    build: .
+    volumes:
+      - .dockerenv:/src/.venv
+      - .:/src
+    ports:
+      - 8000:8000
+    environment:
+      - WATCHFILE_FORCE_POLLING=true # 環境によってホットリロードのため必要１
