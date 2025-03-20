@@ -1,2 +1,6 @@
+## DB関連の操作
+- migrate
+  poetry run python -m api.migrate_db
+
 ## Pylance
 - cnd + .で、importの候補を表示する
