@@ -5,6 +5,7 @@ services:
     volumes:
       - .dockerenv:/src/.venv
       - .:/src
+      - ${HOME}/.ssh/id_rsa:/root/.ssh/id_rsa:ro
     ports:
       - 8000:8000
     environment:
