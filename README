@@ -4,3 +4,11 @@
 
 ## Pylance
 - cnd + .で、importの候補を表示する
+
+## ディレクトリ構成
+- DBに対するCRUD操作
+  `api/cruds`
+- ルーティングとコントローラー
+  `api/routers/task.py`
+- Swaggerを作成するための型定義
+  `api/schemas/task.py`
