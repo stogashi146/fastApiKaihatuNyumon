@@ -1,3 +1,9 @@
+## poetryコマンド
+- インストール
+  poetry add ライブラリ名
+  - add -G devでdev環境のみ
+
+
 ## DB関連の操作
 - migrate
   poetry run python -m api.migrate_db
@@ -12,3 +18,7 @@
   `api/routers/task.py`
 - Swaggerを作成するための型定義
   `api/schemas/task.py`
+
+## pytest
+- 実行
+  PYTHONPATH=./ poetry run pytest
