@@ -2,7 +2,8 @@
 - インストール
   poetry add ライブラリ名
   - add -G devでdev環境のみ
-
+- 起動
+  - poetry run uvicorn api.main:app
 
 ## DB関連の操作
 - migrate

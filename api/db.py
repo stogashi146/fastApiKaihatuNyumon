@@ -18,7 +18,7 @@ ASYNC_DB_URL = f"mysql+aiomysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/de
 
 # 非同期実行
 async_engine = create_async_engine(ASYNC_DB_URL, echo=True)
-async_session = sessionmaker(bind = async_engine, autocommit=False, autoflush=False, class_=AsyncSession)
+async_session = sessionmaker(async_engine, autocommit=False, autoflush=False, class_=AsyncSession)
 
 
 Base = declarative_base()
